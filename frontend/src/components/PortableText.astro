@@ -1,6 +1,14 @@
 ---
-import { sanityPortableText } from '../sanity/portableText'
-const {portableText} = Astro.props;
+import { PortableText as PortableTextInternal } from 'astro-portableText'
+import PortableTextImage from "./PortableTextImage.astro";
+
+const { portableText } = Astro.props;
+
+const components = {
+  type: {
+    image: PortableTextImage,
+  }
+};
 ---
 
-<Fragment set:html={sanityPortableText(portableText)} />
+<PortableTextInternal value={portableText} components={components} />
