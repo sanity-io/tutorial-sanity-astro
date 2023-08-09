@@ -1,13 +1,16 @@
 // my-blog/frontend/astro.config.mjs
 
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import sanity from "@sanity/astro";
 
+// https://astro.build/config
 export default defineConfig({
-  integrations: [sanity({
-    projectId: 'v1kdinau',
-    dataset: 'production',
-    apiVersion: '2023-02-08',
-    useCdn: false,
-  })]
+  integrations: [
+    sanity({
+      projectId: "v1kdinau",
+      dataset: "production",
+      apiVersion: "2023-02-08",
+      useCdn: false,
+    }),
+  ],
 });

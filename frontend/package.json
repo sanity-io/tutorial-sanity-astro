@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@sanity/astro": "^1.0.0",
     "@sanity/image-url": "^1.0.2",
     "astro": "^2.0.6",
     "astro-portabletext": "^0.9.1"
