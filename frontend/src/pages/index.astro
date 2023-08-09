@@ -1,5 +1,5 @@
 ---
-import { useSanityClient } from "astro-sanity";
+import { useSanityClient } from "@sanity/astro";
 
 const posts = await useSanityClient().fetch(`*[_type == "post"]`);
 ---
